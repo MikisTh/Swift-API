@@ -1,0 +1,49 @@
+func cycleSort(array: inout [Int]) {
+
+    for currentIndex in 0..<(array.count - 1) {
+        
+        var item = array[currentIndex]      
+        var currentIndexCopy = currentIndex
+      
+        for i in currentIndex + 1..<array.count {
+            if (array[i] < item) {
+                currentIndexCopy += 1
+            }
+        }
+   
+        if (currentIndexCopy == currentIndex) {
+            continue;
+        }
+    
+        while (item == array[currentIndexCopy]) {
+            currentIndexCopy += 1
+        }
+
+        var temp = array[currentIndexCopy]
+        array[currentIndexCopy] = item
+        item = temp
+       
+        while (currentIndexCopy != currentIndex) {
+         
+            currentIndexCopy = currentIndex
+        
+            for i in (currentIndex + 1)..<array.count {
+                if array[i] < item {
+                    currentIndexCopy += 1
+                }
+            }
+          
+            while (item == array[currentIndexCopy]) {
+                currentIndexCopy += 1
+            }
+           
+            temp = array[currentIndexCopy]
+            array[currentIndexCopy] = item
+            item = temp
+        }
+    }
+}
+
+var array = [12, 11, 15, 10, 9, 1, 2, 3, 13, 14, 4, 5, 6, 7, 8]
+cycleSort(array: &array)
+print(array)
