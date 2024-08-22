@@ -1,3 +1,13 @@
+public func shellSort(_ list: inout [Int]) {
+  var sublistCount = list.count / 2
+  while sublistCount > 0 {
+    for pos in 0..<sublistCount {
+      insertionSort(&list, start: pos, gap: sublistCount)
+    }
+    sublistCount = sublistCount / 2
+  }
+}
+
 func shellSort(array: inout [Int])
 {
     for (int gapSize = array.length / 2; gapSize > 0; gapSize /= 2)
