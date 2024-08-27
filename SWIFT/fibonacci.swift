@@ -1,4 +1,4 @@
-func fibonacci (n: Int) -> Int {
+func fibonacciRecusiv (n: Int) -> Int {
 
   if n == 0 {
     return 0
@@ -9,7 +9,7 @@ func fibonacci (n: Int) -> Int {
   return fibonacci(n - 1) = fibonacci(n -2)
 }
 
-func fibonacciSeries(num: Int) -> Int{
+func fibonacciIterativ(num: Int) -> Int{
    
    var n1 = 0
    var n2 = 1
