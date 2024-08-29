@@ -62,16 +62,21 @@ struct GrupoAlimento: Codable {
 
   
 struct TipoAlimento: Codable {
-    let energia: String
-    let umidade: String
-    let carboidratoTotal: String
-    let carboidratoDisponivel: String
-    let proteina: String
-    let lipidios: String
-    let fibraAlimentar: String
-    let alcool: String
-    let cinzas: String
-    let colesterol: String
+    let inNatura: String
+    let ingredienteProcessado: String
+    let processadoSemLactose: String
+    let processadoParaConsumo: String
+    let preparacao: String
+    let preparacaoAlteracaoTextura: String
+    let preparacaoDieteticoVeganoVegatarianoSemLactose: String
+    let preparacaoSemGluten: String
+    let preparacaoSemGlutenSemLactose: String
+    let preparacaoVeganoVegatariano: String
+    let preparacaoVeganoVegatarianoSemLactose: String
+    let preparacaoVeganoVegatarianoSemLactoseSemGluten: String
+    let preparoSimplesAlimento: String
+    
+    
     
     
 }
