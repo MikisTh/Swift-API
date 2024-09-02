@@ -8,20 +8,20 @@ func postRequest(url: String, params: [String: String],
         return
     }
         
-    //Cria a representacão da requisição
+    //Represetation Request
     let request = NSMutableURLRequest(url: URL)
 
     //Converte as chaves em valores pares para os parametros em formato de String
     let postString = params.map { "\($0.0)=\($0.1)" }.joined(separator: "&")
 
-    /Post Request Method
+    //Post Request Method
     request.httpMethod = "POST"
 
     //Codifica o corpo da mensagem em "data" usando utf8
     request.httpBody = postString.data(using: String.Encoding.utf8)
 
 
-    //new task request
+    //New task request
     let task = URLSession.shared.dataTask(with: request as URLRequest) {
         (data, response, error) in
         do {
@@ -46,7 +46,7 @@ func postRequest(url: String, params: [String: String],
 }
 
 //URL API
-let url = "http://www.SuaURL.com"
+let url = "https://www.tbca.net.br/base-dados/busca_componente.php"
 
 //Params requisition
 let params = [
