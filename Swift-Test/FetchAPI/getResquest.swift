@@ -1,3 +1,4 @@
+import Foundation
 
 func getRequest(url: String,
                  completion: @escaping ([String: Any]?, Error?) -> Void){
@@ -40,13 +41,12 @@ func getRequest(url: String,
 }
 
 // URL API
-let url = "https://jsonplaceholder.typicode.com/todos/1"
+let url = "https://www.tbca.net.br/base-dados/busca_componente.php"
 
 //Call Function Get
 getRequest(url: url){
     (resultado, erro)  in
-      if(resultado != nil) {
-          //O resultado aqui vem como Opcional
+      if(resultado != nil) {          
           print("Sua requisicao foi realizada com êxito! : \n \(resultado)")
       } else {
           print("A requisicao falhou!")
