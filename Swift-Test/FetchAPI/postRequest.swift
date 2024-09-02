@@ -1,4 +1,4 @@
-import.foundation
+import Foundation
 
 func postRequest(url: String, params: [String: String], 
                  completion: @escaping ([String: Any]?, Error?) -> Void){
