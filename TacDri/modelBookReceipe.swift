@@ -15,3 +15,18 @@ class BookReceipe {
         self.summary = summary
     }
 }
+
+@ModelContainer
+
+import SwiftUI
+import SwiftData
+
+@main
+struct SwiftData_CRUDApp: App {
+  var body: some Scene {
+    WindowGroup {
+      BookReceipeListView()
+    }
+    .modelContainer(for: BookReceipe.self)
+  }
+}
