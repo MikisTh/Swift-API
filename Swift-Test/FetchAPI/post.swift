@@ -2,9 +2,13 @@
 import Foundation
 
 struct Post:Codable{
-    let userId: Int
-    let id: Int
-    let title: String
-    let body: String
+    let foodId: Int
+    let idDieta: Int
+    let idRegistro: Int
+    let idTaco : type
+    let idDri : type
+    let categoria: String
+    let descrição: String
+    let result: Int
     
 }
