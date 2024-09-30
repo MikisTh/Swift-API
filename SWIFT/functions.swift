@@ -17,3 +17,19 @@ addVegetables()
 
 
 func makeArray(size: Int, using generator: () -> Int) -> [Int] {}
+
+func emojis(de frutas: [Fruta]) -> [String] {
+    return frutas.map { $0.emoji }
+}
+
+func filtra(por cor: Cor) -> ([Fruta]) -> [Fruta] {
+    return { frutas in
+        frutas.filter { $0.cor == cor }
+    }
+}
+
+func pesoSaladaDeFrutas(com frutas: [Fruta]) -> Double {
+    return frutas.reduce(0) { (total, fruta) in
+        total + fruta.peso
+    }
+}
