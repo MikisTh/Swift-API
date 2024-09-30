@@ -1,3 +1,15 @@
+struct Fruits {
+    let name: String
+    let emoji: String
+    let color: Cor
+    let weigth: Double
+}
+struct Vegetables {
+    let name: String
+    let emoji: String
+    let color: Color
+    let weigth: Double
+}
 
 let fruits: [String] = ["Uva", "Maça", "Banana", "Mamão", "Laranja", "Morango", "Melancia", "Melão", "Abacaxi", "Abacate", "Jabuticaba", "Caju", "Cereja", "Kiwi", "Goiaba", "Cajá", "Acerola", "Maracujá", "Manga", "Pera"]
 
