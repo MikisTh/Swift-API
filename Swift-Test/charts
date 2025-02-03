@@ -1,0 +1,30 @@
+import SwiftUI
+import Charts
+
+struct SalesData: Identifiable {
+    let id = UUID()
+    let day: String
+    let sales: Int
+}
+
+struct ContentView: View {
+    let salesData = [
+        SalesData(day: "Monday", sales: 150),
+        SalesData(day: "Tuesday", sales: 200),
+        SalesData(day: "Wednesday", sales: 100),
+        SalesData(day: "Thursday", sales: 250),
+        SalesData(day: "Friday", sales: 300)
+    ]
+
+    var body: some View {
+        Chart(salesData) { data in
+            BarMark(
+                x: .value("Day", data.day),
+                y: .value("Sales", data.sales)
+            )
+        }
+        .frame(height: 300)
+        .padding()
+        .chartTitle("Weekly Sales")
+    }
+} 
