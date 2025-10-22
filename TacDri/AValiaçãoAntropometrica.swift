@@ -1,3 +1,41 @@
+struct AvaliacaoAntropometrica {
+    var nome: String
+    var idade: Int
+    var sexo: String // "masculino" ou "feminino"
+    var peso: Double // kg
+    var altura: Double // metros
+    var impedancia: Double // ohms
+
+    var sexoValor: Double {
+        return sexo == "masculino" ? 1.0 : 0.0
+    }
+
+    var alturaCm: Double {
+        return altura * 100
+    }
+
+    var massaMagra: Double {
+        let alturaQuadrado = alturaCm * alturaCm
+        return ((alturaQuadrado / impedancia) * 0.401) + (sexoValor * 3.825) + (Double(idade) * -0.071) + 5.102
+    }
+
+    var massaGorda: Double {
+        return peso - massaMagra
+    }
+
+    var percentualGorduraBio: Double {
+        return (massaGorda / peso) * 100
+    }
+
+    func resumoBioimpedancia() {
+        print("📊 Bioimpedância de \(nome):")
+        print(String(format: "Massa magra: %.2f kg", massaMagra))
+        print(String(format: "Massa gorda: %.2f kg", massaGorda))
+        print(String(format: "Gordura corporal: %.2f%%", percentualGorduraBio))
+    }
+}
+
+
 struct AvaliacaoAntropometrica: Identifiable, Codable {
     var id = UUID()
     var nome: String
