@@ -44,3 +44,16 @@ A: 60.00 µg | D: 12.00 µg | E: 3.00 mg | K: 0.00 µg
 
 💧 Vitaminas Hidrossolúveis:
 C: 0.00 mg | B1: 0.24 mg | B2: 0.24 mg | B3: 10.20 mg | B5: 1.80 mg | B6: 0.96 mg | B7: 6.00 µg | B9: 12.00 µg | B12: 4.80 µg
+
+🥗 Minerais totais em 200g de Feijão carioca cozido:
+
+🦴 Cálcio: 54.00 mg
+🩸 Ferro: 2.60 mg
+⚙️ Zinco: 1.00 mg
+💪 Magnésio: 70.00 mg
+💎 Fósforo: 180.00 mg
+🧂 Sódio: 4.00 mg
+🍌 Potássio: 510.00 mg
+🔩 Cobre: 0.34 mg
+🌿 Manganês: 0.74 mg
+🌞 Selênio: 8.00 µg
