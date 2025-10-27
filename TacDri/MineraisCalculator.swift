@@ -1,5 +1,7 @@
 import Foundation
 
+let tacoData = try CSV(name: "taco.csv")
+
 // Estrutura de dados de um alimento com minerais (por 100g)
 struct AlimentoMineral {
     let nome: String
