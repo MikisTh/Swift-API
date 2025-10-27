@@ -36,3 +36,11 @@ Cronograma Swift 2024
 33.Resumo da gramática
 34.Histórico de revisões
 35.Histórico de revisão de documentos
+
+🍎 Resultado para 120g de Salmão:
+
+🧈 Vitaminas Lipossolúveis:
+A: 60.00 µg | D: 12.00 µg | E: 3.00 mg | K: 0.00 µg
+
+💧 Vitaminas Hidrossolúveis:
+C: 0.00 mg | B1: 0.24 mg | B2: 0.24 mg | B3: 10.20 mg | B5: 1.80 mg | B6: 0.96 mg | B7: 6.00 µg | B9: 12.00 µg | B12: 4.80 µg
